@@ -277,7 +277,9 @@ namespace Microsoft.Data.Entity.Design.UI.ViewModels
                     if (string.IsNullOrWhiteSpace(_name)
                         || !EscherAttributeContentValidator.IsValidCsdlEnumTypeName(_name))
                     {
-                        return String.Format(CultureInfo.CurrentCulture, Resources.EnumDialog_ErrorEnumTypeBadname, _name);
+                        return string.IsNullOrWhiteSpace(_name)
+                            ? String.Format(CultureInfo.CurrentCulture, Resources.EnumDialog_ErrorEnumTypeEmpty)
+                            : String.Format(CultureInfo.CurrentCulture, Resources.EnumDialog_ErrorEnumTypeBadname, _name);
                     }
                     else if (IsNew
                              && ModelHelper.IsUniqueName(typeof(EnumType), _artifact.ConceptualModel, _name, true, out errorMessage)

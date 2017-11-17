@@ -1392,6 +1392,9 @@ The exception also contains the following details: '{2}'.</value>
   <data name="EnumDialog_ErrorEnumTypeBadname" xml:space="preserve">
     <value>'{0}' is not a valid name for an enum type.</value>
   </data>
+  <data name="EnumDialog_ErrorEnumTypeEmpty" xml:space="preserve">
+    <value>Enum type name cannot be empty.</value>
+  </data>
   <data name="EnumDialog_ErrorEnumMemberBadname" xml:space="preserve">
     <value>'{0}' is not a valid name for an enum member.</value>
   </data>
@@ -1438,6 +1441,12 @@ The exception also contains the following details: '{2}'.</value>
     <value>New Name:</value>
   </data>
   <data name="RefactorRenameDialog_Title" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="RefactorRenameDialog_NewNameDescription" xml:space="preserve">
+    <value>Enter the new name</value>
+  </data>
+  <data name="RefactorRenameDialog_Description" xml:space="preserve">
     <value>Rename</value>
   </data>
   <data name="RefactorRenameDialog_LocationLabel" xml:space="preserve">

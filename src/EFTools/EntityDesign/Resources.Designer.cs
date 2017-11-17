@@ -874,6 +874,15 @@ namespace Microsoft.Data.Entity.Design {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enum type name cannot be empty..
+        /// </summary>
+        public static string EnumDialog_ErrorEnumTypeEmpty {
+            get {
+                return ResourceManager.GetString("EnumDialog_ErrorEnumTypeEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Namespace.Type.
         /// </summary>
         public static string EnumDialog_ExternalTypeHint {
@@ -3595,11 +3604,29 @@ namespace Microsoft.Data.Entity.Design {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rename.
+        /// </summary>
+        public static string RefactorRenameDialog_Description {
+            get {
+                return ResourceManager.GetString("RefactorRenameDialog_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Location:.
         /// </summary>
         public static string RefactorRenameDialog_LocationLabel {
             get {
                 return ResourceManager.GetString("RefactorRenameDialog_LocationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the new name.
+        /// </summary>
+        public static string RefactorRenameDialog_NewNameDescription {
+            get {
+                return ResourceManager.GetString("RefactorRenameDialog_NewNameDescription", resourceCulture);
             }
         }
         

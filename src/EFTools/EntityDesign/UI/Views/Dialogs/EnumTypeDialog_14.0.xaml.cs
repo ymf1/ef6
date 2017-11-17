@@ -89,16 +89,25 @@ namespace Microsoft.Data.Entity.Design.UI.Views.Dialogs
             this.DialogResult = false;
         }
 
-        private void OnTextBoxTextChanged(Object sender, TextChangedEventArgs e)
+        private void OnEnumNameTextChanged(Object sender, TextChangedEventArgs e)
         {
             // Force binding between source and target element; this is so that validation can take place immediately.
             ForceTextBoxUpdateSource(sender);
+
+            HandleTextBoxError(sender, txtEnumError);
         }
 
-        private void OnTextBoxLostFocus(object sender, RoutedEventArgs e)
+        private void OnExternalNameTextChanged(Object sender, TextChangedEventArgs e)
         {
             // Force binding between source and target element; this is so that validation can take place immediately.
             ForceTextBoxUpdateSource(sender);
+
+            HandleTextBoxError(sender, txtExternalName);
+        }
+
+        private static void HandleTextBoxError(object sender, TextBlock txtBlock)
+        {
+            txtBlock.Focusable = (bool)((TextBox)sender).GetValue(Validation.HasErrorProperty);
         }
 
         private void OnRefrenceExternalTypeClick(Object sender, RoutedEventArgs e)
