@@ -223,6 +223,33 @@ namespace Microsoft.Data.Entity.Design {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string ConfirmDialog_No {
+            get {
+                return ResourceManager.GetString("ConfirmDialog_No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete this item?.
+        /// </summary>
+        public static string ConfirmDialog_Title {
+            get {
+                return ResourceManager.GetString("ConfirmDialog_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string ConfirmDialog_Yes {
+            get {
+                return ResourceManager.GetString("ConfirmDialog_Yes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Could not add a new connection string because of the following error: &apos;{0}&apos;..
         /// </summary>
         public static string ConnectionManager_AddError {
@@ -3600,15 +3627,6 @@ namespace Microsoft.Data.Entity.Design {
         public static string RefactorRenameDialog_Cancel {
             get {
                 return ResourceManager.GetString("RefactorRenameDialog_Cancel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rename.
-        /// </summary>
-        public static string RefactorRenameDialog_Description {
-            get {
-                return ResourceManager.GetString("RefactorRenameDialog_Description", resourceCulture);
             }
         }
         

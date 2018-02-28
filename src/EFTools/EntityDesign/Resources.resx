@@ -1428,6 +1428,15 @@ The exception also contains the following details: '{2}'.</value>
   <data name="RefactorRename_UndoDescription" xml:space="preserve">
     <value>Rename from {0} to {1}</value>
   </data>
+  <data name="ConfirmDialog_Title" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+  <data name="ConfirmDialog_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ConfirmDialog_No" xml:space="preserve">
+    <value>No</value>
+  </data>
   <data name="RefactorRenameDialog_OK" xml:space="preserve">
     <value>OK</value>
   </data>
@@ -1445,9 +1454,6 @@ The exception also contains the following details: '{2}'.</value>
   </data>
   <data name="RefactorRenameDialog_NewNameDescription" xml:space="preserve">
     <value>Enter the new name</value>
-  </data>
-  <data name="RefactorRenameDialog_Description" xml:space="preserve">
-    <value>Rename</value>
   </data>
   <data name="RefactorRenameDialog_LocationLabel" xml:space="preserve">
     <value>Location:</value>

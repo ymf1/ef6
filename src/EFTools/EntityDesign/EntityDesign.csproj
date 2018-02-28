@@ -264,6 +264,9 @@
     <Compile Include="UI\Views\Dialogs\RefactorRenameDialog_$(VisualStudioVersion).xaml.cs">
       <DependentUpon>RefactorRenameDialog_$(VisualStudioVersion).xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Views\Dialogs\ConfirmDialog_$(VisualStudioVersion).xaml.cs">
+      <DependentUpon>ConfirmDialog_$(VisualStudioVersion).xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Views\Explorer\DiagramManagerContextItem.cs" />
     <Compile Include="UI\Views\Explorer\IDiagramManager.cs" />
     <Compile Include="UI\Util\EntityDesignNewFunctionImportResult.cs" />
@@ -412,6 +415,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Views\Dialogs\RefactorRenameDialog_$(VisualStudioVersion).xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Views\Dialogs\ConfirmDialog_$(VisualStudioVersion).xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

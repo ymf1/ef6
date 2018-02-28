@@ -22,7 +22,6 @@
         MinWidth="430"
         SizeToContent="WidthAndHeight"
         Title="{x:Static Design:Resources.RefactorRenameDialog_Title}"
-        AutomationProperties.Name="{x:Static Design:Resources.RefactorRenameDialog_Description}"
         FocusManager.FocusedElement="{Binding ElementName=newNameTextBox}">
     <Grid>
         <Grid.RowDefinitions>
