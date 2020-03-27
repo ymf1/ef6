@@ -69,14 +69,8 @@ stages:
             steps:
               - checkout: self
                 clean: true
-              - powershell: |
-                  SqlLocalDB stop
-                  SqlLocalDB delete
-                  Remove-Item "$env:USERPROFILE\*.mdf"
-                  Remove-Item "$env:USERPROFILE\*.ldf"
-                  SqlLocalDB create
-                  SqlLocalDB start
-                displayName: Cleanup databases
+              - script: tools\CleanMSSQLLocalDB.cmd
+                displayName: Cleanup LocalDB databases
               - task: NuGetCommand@2
                 displayName: 'Clear NuGet caches'
                 condition: succeeded()
