@@ -69,6 +69,7 @@ stages:
             steps:
               - checkout: self
                 clean: true
+              - powershell: Get-ChildItem -Recurse -ErrorAction SilentlyContinue 'C:\Program Files*\sqlcmd.exe'
               - script: tools\CleanMSSQLLocalDB.cmd
                 displayName: Cleanup LocalDB databases
               - task: NuGetCommand@2
